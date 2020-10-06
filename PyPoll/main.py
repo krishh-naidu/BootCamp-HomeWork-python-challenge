@@ -32,6 +32,7 @@ with open(output_file, 'w') as file:
         file.write('Total Votes: {}'.format(len(total_no_of_votes)))
         file.write('\n')
         file.write('-------------------')
+        file.write('\n')
     #Calculate all the votes for each candidate
         for candidate in list_of_candidates:
             for row in data:
