@@ -9,7 +9,7 @@ Created on Tue Oct  6 16:22:35 2020
 import csv
 from pathlib import Path
 
-input_file = Path("BootCamp-HomeWork-python-challenge",'PyBoss','Resources','employee_data.csv')
+input_file = Path('Resources','employee_data.csv')
 new_date=[]
 First_Name=[]
 Last_Name=[]
@@ -89,7 +89,7 @@ with open(input_file,'r') as csv_file:
 
 # Convert Old SSN into new format
        old_ssn = (row[3]).split('-')
-       new_ssn.append('***' + '_' + '**' + '_' + old_ssn[2])
+       new_ssn.append('***' + '-' + '**' + '-' + old_ssn[2])
 # Format state code      
        state=row[4]
        if state in us_state_abbrev:
@@ -100,7 +100,7 @@ with open(input_file,'r') as csv_file:
 for i in range(len(data)):
     print(str(Emp_Id[i])+','+str(First_Name[i])+','+str(Last_Name[i])+','+str(new_date[i])+','+str(new_ssn[i])+','+str(new_state_cd[i]))
 
-output_file = Path("BootCamp-HomeWork-python-challenge",'PyBoss','Analysis','Employee_Summary.csv')
+output_file = Path('Analysis','Employee_Summary.csv')
 with open(output_file, 'w') as out_file: 
     out_file.write('Emp ID')
     out_file.write(',')

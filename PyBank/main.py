@@ -3,10 +3,10 @@
 
 # In[85]:
 
-
+import csv
 from pathlib import Path
 
-input_file = Path("BootCamp-HomeWork-python-challenge",'PyBank','Resources','budget_data.csv')
+input_file = Path('Resources','budget_data.csv')
 total_number_of_months=[]
 profit_loss=[]
 average_change=[]
@@ -25,7 +25,7 @@ with open (input_file, 'r') as csv_file:
 max_increase_month = average_change.index(max(average_change)) + 1
 min_increase_month = average_change.index(min(average_change)) + 1
 
-output_file = Path("BootCamp-HomeWork-python-challenge",'PyBank','Analysis','Financial_Analysis.txt')
+output_file = Path('Analysis','Financial_Analysis.txt')
 
 with open(output_file, 'w') as file:
     file.write('Financial Analysis')

@@ -26,11 +26,22 @@ Your task is to create a Python script to automate the analysis of any such pass
 
 ```output
 Paragraph Analysis
------------------
-Approximate Word Count: 122
-Approximate Sentence Count: 5
-Average Letter Count: 4.6
-Average Sentence Length: 24.0
+-------------------
+Paragraph Analysis
+-------------------
+Approximate Word Count: 276
+Approximate Word Count: 11
+Average Letter Count: 5.16
+Average Sentence Length: 25.09
+
+Paragraph Analysis
+-------------------
+Paragraph Analysis
+-------------------
+Approximate Word Count: 120
+Approximate Word Count: 5
+Average Letter Count: 4.41
+Average Sentence Length: 24.00
 ```
 
 * **Special Hint:** You may find this code snippet helpful when determining sentence length (look into [regular expressions](https://en.wikipedia.org/wiki/Regular_expression) if interested in learning more):

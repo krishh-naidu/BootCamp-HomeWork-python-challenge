@@ -16,7 +16,7 @@ Created on Tue Oct  6 16:22:35 2020
 
 from pathlib import Path
 word_count=[]
-input_file = Path("BootCamp-HomeWork-python-challenge",'PyParagraph','Resources','paragraph_2.txt')
+input_file = Path('Resources','paragraph_3.txt')
 with open(input_file,'r') as txt_file:
    txt_reader = txt_file.read()
    words = len([word for word in txt_reader.split(" ")])
@@ -30,7 +30,7 @@ with open(input_file,'r') as txt_file:
    
 
    
-output_file = Path("BootCamp-HomeWork-python-challenge",'PyParagraph','Analysis','Paragraph Analysis_2.txt')
+output_file = Path('Analysis','Paragraph Analysis_3.txt')
 with open(output_file,'w') as out_file:
     out_file.write('Paragraph Analysis')
     out_file.write('\n')
